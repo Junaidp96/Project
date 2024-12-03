@@ -9,5 +9,6 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-  type: LoadBalancer  # Exposes the service to the public IP
+      nodePort: 30080  # This is the port on your local machine
+  type: NodePort
 
